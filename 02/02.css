@@ -154,3 +154,8 @@ header li{
   }
   
 }
+
+footer li{
+  border: 1px darkkhaki ;
+  text-align: center;
+}
