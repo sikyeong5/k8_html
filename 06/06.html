@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../js.css">
   <link rel="stylesheet" type="text/css" href="../06/06.css">
   <title>JS 기본</title>
 
@@ -20,29 +21,41 @@
 
 <body>
   <header>
-    <h1>자바스크립트 주사위 게임</h1>
-    <div>
-      <a href="../index.html"><img src="../img/home.png" id="home"> </a>
-    </div>
+    <div>자바스크립트 주사위 게임</div>
+    <div id="btDiv4">
+      <div>
+        <a href="../index.html"><img src="../img/home.png" id="home"> </a>
+      </div>
   </header>
   <main>
-    <section>
-      <h2>Computer</h2>
-      <div id='msg1'><img src="../img/1.png"></div>
-      <h2>User</h2>
-      <div id='msg2'><img src="../img/1.png"></div>
-    </section>
-    <section>
-      <!-- 이미지를 넣어야 함 -->
-      <button id="bt1">1 선택</button>
-      <button id="bt2">2 선택</button>
-      <button id="bt3">3 선택</button>
-      <button id="bt4">4 선택</button>
-      <button id="bt5">5 선택</button>
-      <button id="bt6">6 선택</button>
+    <article>
+      <section class="dice">
+        <p>
+          <span>Computer</span>
+          <img id="com" src="../img/1.png">
+        </p>
+        <P>
+        <span>User</span>
+        <img id="user" src="../img/1.png">
+      </P>
+      </section>
+      <section class="dicebt">
 
-    
-    </section>
+        <button class="bt4">1 선택</button>
+        <button class="bt4">2 선택</button>
+        <button class="bt4">3 선택</button>
+        <button class="bt4">4 선택</button>
+        <button class="bt4">5 선택</button>
+        <button class="bt4">6 선택</button>
+
+
+      </section>
+      </div>
+      <div id="msg">
+        결과확인
+
+      </div>
+
   </main>
 </body>
 

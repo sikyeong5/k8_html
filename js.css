@@ -8,6 +8,7 @@
 header, main {
   width: 60%;
   margin-left: 20%;
+  margin-right: 20;
   /* 헤더와 메인의 중앙배치 */
 
   display: flex;
@@ -47,6 +48,7 @@ main {
 
 section {
   margin: 5px;
+ 
 }
 
 button {
