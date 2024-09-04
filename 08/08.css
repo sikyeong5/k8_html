@@ -1,0 +1,89 @@
+* {
+  padding: 0px;
+  margin: opx;
+  box-sizing: border-box;
+}
+
+header,
+main {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20;
+  /* 헤더와 메인의 중앙배치 */
+
+  display: flex;
+}
+
+header {
+  height: 80px;
+  color: blue;
+  background-color: aliceblue;
+  font-weight: bold;
+  justify-content: space-between;
+  /* 안에 들어간 콘텐츠들 사이의 간격 똑같게 조절 */
+  align-items: center;
+  /* 헤더 글자 위아래 정렬 */
+  padding: 20px;
+  /* 헤더 글자랑 그림 주변 여백 공간 */
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+/* 홈그림 크기 조절 */
+
+main {
+  flex-direction: column;
+  /* 컨텐츠가 세로로 배치되게 설정 */
+  justify-content: center;
+  /* 플렉스 박스 안에서 중앙에 두는 것 */
+  align-items: center;
+  /* 버튼 중앙정렬 */
+
+  height: 700px;
+  border: 1px dotted rgb(182, 182, 247);
+}
+
+article {
+  padding: 30px;
+  margin: 60px;
+  font-weight: bold;
+  background-color: aqua;
+  width: 80%;
+  height: 20%;
+}
+
+.sec {
+  margin: 5px;
+  background-color: beige;
+
+}
+
+#txt {
+  height: 40px;
+}
+
+section {
+  margin: 5px;
+
+}
+
+input {
+  width: 200px;
+}
+
+button {
+  padding: 10px;
+  /* 버튼 여백 조절 */
+  border-radius: 10%;
+  background-color: rgb(167, 167, 255);
+  color: white;
+  border: none;
+
+}
+
+button:hover {
+  background-color: rgb(3, 113, 240);
+}
