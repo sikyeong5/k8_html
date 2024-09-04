@@ -1,36 +1,44 @@
-document.addEventListener('DOMContentLoaded', () => {
+//select값 변경
+const handleChange = (s1, s2, lb1, lb2, t1, t2) => {
+  if (s1.value == '℃') s2.value = '℉';
+  else s2.value = '℃' ;
 
-  const imgs = document.querySelectorAll(`.dice > p > img`);
+  lb1.innerHTML = s1.value ;
+  lb2.innerHTML = s2.value ;
 
-  const bts = document.querySelectorAll('.bt4');
+  t1.value = '';
+  t2.value = '';
+}
 
-  const msg = document.querySelector('#msg');
 
-  console.log(bts)
+document.addEventListener ('DOMContentLoaded', ()=> {
+const sel1 = document.querySelector('#sel1');
+const sel2 = document.querySelector('#sel2');
 
-  //버튼 클릭
-  for (let bt of bts) {
-    console.log(bt)
-    bt.addEventListener(`click`, () => {
-      //컴퓨터 랜덤수
-      let comN = Math.floor(Math.random() * 6) + 1;
-      imgs[0].setAttribute('src',`../img/${comN}.png`);
-      imgs[0].setAttribute('alt',`${comN}.png`);
+const txt1 = document. querySelector('#txt1');
+const txt2 = document. querySelector('#txt2');
 
-      //사용자 선택수
-      console.log(bt.textContent.charAt(0))
-      let userN = parseInt(bt.textContent.charAt(0));
-      imgs[1].setAttribute('src',`../img/${userN}.png`);
-      imgs[1].setAttribute('alt',`${userN}.png`);
+const lb1 = document.querySelector('label[for=txt1]');
+const lb2 = document.querySelector('label[for=txt2]');
 
-      
-      //결과표시
-      if(comN === userN) {
-        msg.textContent ='맞음';
-      } else {
-        msg.textContent ='틀림';
-      }
-    });
+console.log(lb1, lb2)
+
+//select box
+sel1.addEventListener('change', ()=>{
+ handleChange(sel1, sel2 ,lb1 , lb2, txt1, txt2);
+
+});
+sel2.addEventListener('change', ()=>{
+  handleChange(sel2, sel1, lb2, lb1,txt1, txt2);
+});
+
+txt1.addEventListener('input',() =>{
+  if (sel1.value =='℃') {
+    txt2.value = ((parseFloat(txt1.value)*(9/5) + 32).toFixed(3)) ;
+    
+  } else {
+    txt2.value = ((parseFloat(txt1.value) - 32) * (9/5).toFixed(3)) ;
   }
+  });
 
 });

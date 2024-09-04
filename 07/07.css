@@ -26,3 +26,26 @@ select {
   width: 50%;
   height: 30px;
 }
+
+input {
+  width: 70%;
+  height: 40px;
+}
+
+label {
+  width: 10%;
+  height: 40px;
+  padding-left: 10px;
+ 
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+#txt2 {
+  background-color: rgb(91, 209, 130);
+}
+
