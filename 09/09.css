@@ -4,7 +4,7 @@
   align-items: center;
 
   width: 100%;
-  background-color: bisque;
+  background-color: rgb(123, 164, 252);
 }
 
 .sec > input {
@@ -14,7 +14,7 @@
 }
 
 #text2 {
-  background-color: rgb(99, 233, 188);
+  background-color: rgb(194, 226, 245);
 }
 
 .sec >button {
