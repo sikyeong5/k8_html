@@ -1,0 +1,23 @@
+.sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  background-color: bisque;
+}
+
+.sec > input {
+  width: 40%;
+  height: 30px;
+  margin: 10px;
+}
+
+#text2 {
+  background-color: rgb(99, 233, 188);
+}
+
+.sec >button {
+  width: 30%;
+  margin: 5px;
+}

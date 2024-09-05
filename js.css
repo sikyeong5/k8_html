@@ -16,8 +16,10 @@ header, main {
 
 header {
   height: 80px;
-  color: blue;
+  color: rgb(92, 92, 255);
   background-color: aliceblue;
+  font-weight: bold;
+
 
   justify-content: space-between;
   /* 안에 들어간 콘텐츠들 사이의 간격 똑같게 조절 */
