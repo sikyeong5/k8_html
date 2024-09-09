@@ -56,7 +56,7 @@ section {
 button {
   padding: 20px;
   /* //버튼 여백 조절 */
-  border-radius: 50px;
+  border-radius: 20px;
   background-color: rgb(167, 167, 255);
   color: white;
   border: none;

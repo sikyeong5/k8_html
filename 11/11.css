@@ -1,0 +1,19 @@
+.sec .sec1 {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+
+}
+
+.sec1 >button {
+  width: 10%;
+  margin:20px;
+}
+
