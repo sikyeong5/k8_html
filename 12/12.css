@@ -1,0 +1,77 @@
+#boxofficeMain {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.sec, .divDt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec {
+  width: 100%;
+  flex-direction: column;
+}
+
+.divDt {
+  width: 80%;
+  height: 60px;
+  background-color: aliceblue;
+
+ flex-direction: row;
+ border: 1px dotted blue ;
+}
+
+input[type=date] {
+  width: 40%;
+  height: 30px;
+
+}
+
+.sec >ul {
+  list-style: none;
+
+  width: 80%;
+  height: 50px;
+  /* line-height: 80px; */
+}
+
+.mvli {
+  width: 100%; 
+  height: 60px;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  margin: 0px 2px;
+}
+
+
+.movieNm:hover {
+/* background-color: rgb(219, 184, 252); */
+border-bottom: 2px solid cornflowerblue;
+
+}
+
+.rank{
+  width: 40px;
+  height: 40px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(116, 200, 255);
+  color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+
+}
+
+.rank:hover{
+background-color: blue;
+}
