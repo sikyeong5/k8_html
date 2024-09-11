@@ -73,32 +73,6 @@ const getYesterday = () => {
   //return yesterday;
 }
 
-
-
-//radio 값 가져오기
- const getGubun = () => {
-// //radio 요소 가져오기
-// const r1 = document.querySelector('#r1');
-// const r2 = document.querySelector('#r2');
-// const r3 = document.querySelector('#r3');
-
-// console.log("r1=", r1.checked);
-// console.log("r2=", r2.checked);
-// console.log("r3=", r3.checked);
-
-// if (r1.checked) return r1.value;
-// else if(r2.checked) return r2.value;
-// else if(r3.checked) return r3.value;
-
-  //radio 버튼의 클릭된 것만 가져오기 (위에 있는 코드를 이걸로 대체 가능)
-  const gubun=document.querySelector('input[name= mvGubun]:checked');
-  console.log('gubun=', gubun.value);
-
-  return gubun.value;
-}
-
-
-
 //DOM 생성후
 document.addEventListener('DOMContentLoaded', () => {
   //어제 날짜 구하기
@@ -110,15 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //Dom 요소 가져오기
   const dt = document.querySelector('#dt');
   const ul = document.querySelector('.sec > ul');
-  //const radios = document.querySelectorAll('input[type=radio]')
-  //const radios= document.getElementsByName('mvGubun');
-
-
-  const radios= document.querySelectorAll('input[name= mvGubun]');
-
-
-
-
+  const sel1 = document.querySelector('#sel1');
 
   let yesterday = getYesterday();
   console.log('yesterday:', yesterday);
@@ -129,25 +95,20 @@ document.addEventListener('DOMContentLoaded', () => {
   //date의 기본값
   dt.value = yesterday;
 
-  //Gubun의 값
-  console.log(getGubun());
 
 
    //기본 첫 페이지 보이기
-   getData(dt.value.replaceAll('-',''), ul, getGubun());
+   getData(dt.value.replaceAll('-',''), ul, sel1.value);
 
   //데이터 가져오기
   dt.addEventListener('change', () => {
-    getData(dt.value.replaceAll('-', ''), ul, getGubun());
+    getData(dt.value.replaceAll('-', ''), ul, sel1.value);
   });
 
- 
-for (let radio of radios) {
-  radio.addEventListener('click', ()=>{
-    if(radio.checked) 
-      getData(dt.value.replaceAll('-', ''), ul, radio.value);
+  sel1.addEventListener('change', () => {
+    getData(dt.value.replaceAll('-', ''), ul, sel1.value);
   });
-}
+
 
   // const date = new Date(yesterday);
   // const dateFormat = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;

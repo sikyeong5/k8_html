@@ -26,23 +26,15 @@
 
         <div class="divDt">
           <input type="date" id="dt" name="dt">
-
-          <fieldset>
-            <input type='radio' id='r1' name='mvGubun' value='K'>
-            <label for='r1'>국내</label>
-            <input type='radio' id='r2' name='mvGubun' value='F'>
-            <label for='r2'>해외</label>
-            <input type='radio' id='r3' name='mvGubun' value='T' checked>
-            <label for='r3'>전체</label>
-          <!-- label을 해야 동그라미 버튼말고 글자 눌러도 선택됨 -->
-
-        </fieldset>
-        <!-- 라벨에 그룹핑하고 싶을땐 <fieldset>활용하기 -->
-
-          </input>
-        </div>
+      
+          <select id="sel1" name="sel1">
+            <option value="K">국내</option>
+            <option value="F">해외</option>
+            <option value="T" selected>전체</option>
+          </select>
+      </div>
       </section>
-      <!-- 
+<!-- 
       <section class="sec">
         
       </section> -->
