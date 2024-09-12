@@ -1,11 +1,27 @@
-#boxofficeMain {
+#boxofficeMain, #myfooter {
   display:flex;
+
   flex-direction:column;
   justify-content: start;
   align-items: center;
-  height: 500px;
+  font-size: small;
+
  /* background-color: aqua; */
 }
+
+#boxofficeMain{
+  height: 500px;
+
+}
+
+#mvfooter {
+  height: 120px;
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgb(17, 3, 66);
+  color: white;
+}
+
 
 .sec, .divDt {
   display: flex;
@@ -120,4 +136,3 @@ background-color: blue;
 .spBlue{
   color: blue;
 }
-

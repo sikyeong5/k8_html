@@ -1,8 +1,7 @@
+
 header {
   background-color: rgb(255, 254, 183);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ 
 }
 
 .menuli {
