@@ -1,14 +1,32 @@
+* {
+ 
+  align-items: center;
+  justify-content: center;
+  display: row;
 
+
+}
 header {
-  background-color: rgb(255, 254, 183);
+  width: 80%;
+  margin-left: 10%;
+  background-color: rgb(119, 248, 107);
+  height: 50px;
+  font-size: small;
+  align-items: ;
  
 }
 
 .menuli {
-  background-color: rgb(247, 232, 22);
+  width: 80%;
+  background-color: rgb(83, 161, 9);
   align-items: center;
   border-radius: 5px;
-  padding: 15px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10%;
+ 
+
+  color: white;
 }
 
 body ul {
@@ -18,5 +36,5 @@ body ul {
 }
 
 .menuli:hover {
-  background-color: rgb(226, 192, 0);
+  background-color: rgb(128, 233, 114);
 }
